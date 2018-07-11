@@ -32,8 +32,8 @@ sed -i '$ i\echo "nameserver 8.8.4.4" >> /etc/resolv.conf' /etc/rc.local
 # install wget and curl
 apt-get update;apt-get -y install wget curl;
 
-# set time GMT +8
-ln -fs /usr/share/zoneinfo/Asia/Manila /etc/localtime
+# set time GMT +7
+ln -fs /usr/share/zoneinfo/Asia/Bangkok /etc/localtime
 
 # set repo
 cat > /etc/apt/sources.list <<END2
